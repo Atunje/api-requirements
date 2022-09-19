@@ -48,6 +48,10 @@ You can now access the endpoint at http://localhost:8000/api/products
     php artisan db:seed
     php artisan serve
 
+**Run Tests**
+
+    php artisan test
+
 ## Dev Dependencies
 
 - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper)
