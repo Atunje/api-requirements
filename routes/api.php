@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Application\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/products', []);
+Route::get('/products', [ProductsController::class, 'index']);
