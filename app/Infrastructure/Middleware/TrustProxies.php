@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Infrastructure\Laravel\Middleware;
+namespace App\Infrastructure\Middleware;
 
 use Illuminate\Http\Middleware\TrustProxies as Middleware;
 use Illuminate\Http\Request;

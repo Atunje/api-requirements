@@ -5,7 +5,7 @@ namespace App\Application\Controllers;
 use App\Application\Requests\ProductsRequest;
 use App\Application\Resources\ProductResource;
 use App\Domain\Products\Repositories\ProductRepository;
-use App\Infrastructure\Laravel\Controller;
+use App\Infrastructure\Controller;
 use Illuminate\Http\JsonResponse;
 
 class ProductsController extends Controller

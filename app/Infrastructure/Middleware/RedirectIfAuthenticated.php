@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Infrastructure\Laravel\Middleware;
+namespace App\Infrastructure\Middleware;
 
-use App\Infrastructure\Laravel\Providers\RouteServiceProvider;
+use App\Infrastructure\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
