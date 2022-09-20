@@ -52,8 +52,18 @@ You can now access the endpoint at http://localhost:8000/api/products
 
     php artisan test
 
-## Dev Dependencies
+### Dev Dependencies
 
 - [barryvdh/laravel-ide-helper](https://github.com/barryvdh/laravel-ide-helper)
 - [nunomaduro/larastan](https://github.com/nunomaduro/larastan)
 - [nunomaduro/phpinsights](https://github.com/nunomaduro/phpinsights)
+
+### ✨ PHP Insights Analysis
+
+
+                92.2%                   88.5%                   100 %                   93.9%                 
+                                                                                                              
+                                                                                                              
+                 Code                 Complexity             Architecture               Style                 
+
+
