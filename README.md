@@ -48,6 +48,13 @@ You can now access the endpoint at http://localhost:8000/api/products
     php artisan db:seed
     php artisan serve
 
+### Endpoint
+
+- Fetch Products - http://localhost:8000/api/products
+- Filter by Category - http://localhost:8000/api/products?category=insurance
+- Filter by Price - http://localhost:8000/api/products?price=89000
+- Filter by Category and Price - http://localhost:8000/api/products?category=vehicle&price=89000
+
 **Run Tests**
 
     php artisan test
