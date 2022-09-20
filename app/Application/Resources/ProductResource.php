@@ -22,13 +22,7 @@ class ProductResource extends JsonResource
             'sku' => $this->sku,
             'name' => $this->name,
             'category' => $this->category,
-            'price' => $this->getPriceDetails(),
+            'price' => $this->priceDetails(),
         ];
-    }
-
-    private function getPriceDetails(): array
-    {
-        $action = new CreatePriceDetailsAction($this->resource);
-        return $action();
     }
 }

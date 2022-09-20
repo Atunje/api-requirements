@@ -2,6 +2,7 @@
 
 namespace App\Domain\Products\Models;
 
+use App\Domain\Products\Actions\CreatePriceDetailsAction;
 use App\Domain\Products\Enums\Category;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -24,4 +25,10 @@ class Product extends Model
         'category' => Category::class,
         'price' => 'float',
     ];
+
+    public function priceDetails(): array
+    {
+        $priceDetails = new CreatePriceDetailsAction($this);
+        return $priceDetails();
+    }
 }

@@ -9,6 +9,8 @@ use App\Domain\Products\Models\Product;
 class CreatePriceDetailsAction
 {
     private const SPECIAL_SKU = '000003';
+    private const INSURANCE_DISCOUNT = 0.3;
+    private const SPECIAL_SKU_DISCOUNT = 0.15;
 
     public function __construct(private readonly Product $product)
     {
@@ -36,11 +38,11 @@ class CreatePriceDetailsAction
         $discount_percentage = 0;
 
         if ($this->product->category === Category::Insurance) {
-            $discount_percentage = 0.3;
+            $discount_percentage = self::INSURANCE_DISCOUNT;
         }
 
         if ($this->product->sku === self::SPECIAL_SKU) {
-            $discount_percentage = 0.15;
+            $discount_percentage = self::SPECIAL_SKU_DISCOUNT;
         }
 
         return $discount_percentage;
